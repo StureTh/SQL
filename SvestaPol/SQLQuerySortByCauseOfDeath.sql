@@ -3,8 +3,8 @@ SELECT CONCAT(tableCrew.FirstName+' ', tableCrew.LastName) AS Name,
        tablePlanet.Planet,
        tablePlanet.race,
        DepartmentName,
-	   CauseOfDeath
-
+	   CauseOfDeath,
+	   DateOfDeath
 FROM tableCrew
      JOIN tablePlanet ON tablePlanet.PlanetID = tableCrew.PlanetID
      JOIN tableDepartment_Crew AS CD ON tableCrew.EnNumber = cd.EnNumber

@@ -1,6 +1,6 @@
 SELECT CONCAT(tableCrew.FirstName+' ', tableCrew.LastName) AS Name,
               tableDeathLogg.CauseOfDeath,
-			  tableDeathLogg.DateOfDeath
+	           DateOfDeath
 
 
 FROM tableCrew
